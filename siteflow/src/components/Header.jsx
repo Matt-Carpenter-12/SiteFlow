@@ -1,22 +1,25 @@
 import React from "react";
-import "./Header.css";
 
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <div className="logo">
-          <h1>SiteFlow</h1>
-        </div>
-        <ul>
+    <header className="bg-gray-900 fixed w-full top-0 z-50 shadow-lg">
+      <nav className="container mx-auto p-4 flex justify-between items-center">
+        <h1 className="text-white text-2xl font-bold">SiteFlow</h1>
+        <ul className="flex space-x-6">
           <li>
-            <a href="#services">Services</a>
+            <a href="#services" className="text-white hover:text-green-500">
+              Services
+            </a>
           </li>
           <li>
-            <a href="#pricing">Pricing</a>
+            <a href="#pricing" className="text-white hover:text-green-500">
+              Pricing
+            </a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" className="text-white hover:text-green-500">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
